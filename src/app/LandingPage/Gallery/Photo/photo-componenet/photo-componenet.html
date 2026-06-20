@@ -1,0 +1,27 @@
+<section class="gallery-banner">
+
+  <div class="banner-content">
+    <h1>Photo Gallery</h1>
+
+    <div class="breadcrumb">
+      Home <span>›</span> Photo Gallery
+    </div>
+  </div>
+
+</section>
+
+<section class="gallery-section">
+
+  <div class="gallery-grid">
+
+    @for(photo of photos; track photo){
+
+      <div class="gallery-item">
+        <img [src]="photo" alt="Gallery Image">
+      </div>
+
+    }
+
+  </div>
+
+</section>

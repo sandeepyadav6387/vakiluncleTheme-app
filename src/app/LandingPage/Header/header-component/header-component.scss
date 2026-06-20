@@ -1,0 +1,155 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background: #f8f5f0;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.navbar {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 52px;
+}
+
+.desktop-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+
+  a,
+  button {
+    text-decoration: none;
+    color: #1f2937;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    transition: .3s;
+  }
+
+  a:hover,
+  button:hover {
+    color: #d97706;
+  }
+}
+
+.dropdown {
+  position: relative;
+
+  &:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 240px;
+  background: white;
+  border-radius: 12px;
+  padding: .5rem 0;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, .08);
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+
+  transition: .3s;
+
+  a {
+    display: block;
+    padding: 12px 18px;
+  }
+}
+
+:host ::ng-deep .desktop-btn {
+  border-radius: 999px;
+}
+
+.mobile-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  font-size: 1.5rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+@media (max-width: 991px) {
+
+  .desktop-nav,
+  .desktop-btn {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: fixed;
+    top: 90px;
+    right: -100%;
+    width: 320px;
+    height: calc(100vh - 90px);
+    background: white;
+    padding: 1.5rem;
+    overflow-y: auto;
+    transition: .4s;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, .1);
+
+    &.open {
+      right: 0;
+    }
+
+    a,
+    button {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 0;
+      border: none;
+      background: transparent;
+      text-decoration: none;
+      color: #111827;
+      border-bottom: 1px solid #eee;
+    }
+  }
+
+  .submenu {
+    padding-left: 1rem;
+
+    a {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .navbar {
+    height: 80px;
+  }
+
+  .mobile-menu {
+    top: 80px;
+    height: calc(100vh - 80px);
+    width: 100%;
+  }
+
+  .logo img {
+    height: 45px;
+  }
+}

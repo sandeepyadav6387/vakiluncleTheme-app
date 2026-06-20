@@ -1,0 +1,155 @@
+<header class="header">
+  <div class="container mx-auto px-4 lg:px-8">
+
+    <div class="navbar">
+
+      <!-- Logo -->
+      <a routerLink="/" class="logo">
+        <img
+          src="/assets/Images/header-logo1.svg"
+          alt="Logo">
+      </a>
+
+      <!-- Desktop Menu -->
+      <nav class="desktop-nav">
+
+        <a routerLink="/">Home</a>
+
+        <a routerLink="/about-us">
+          About Us
+        </a>
+
+        <a routerLink="/practice-area">
+          Practice Areas
+        </a>
+
+        <!-- Gallery -->
+        <div class="dropdown">
+          <button>
+            Gallery
+            <i class="pi pi-angle-down"></i>
+          </button>
+
+          <div class="dropdown-menu">
+            <a routerLink="/gallery/photos">
+              Photo Gallery
+            </a>
+
+            <a routerLink="/gallery/videos">
+              Video Gallery
+            </a>
+          </div>
+        </div>
+
+        <!-- Pages -->
+        <div class="dropdown">
+          <button>
+            Pages
+            <i class="pi pi-angle-down"></i>
+          </button>
+
+          <div class="dropdown-menu">
+            <a routerLink="/team-members">Team Members</a>
+            <a routerLink="/testimonials">Testimonials</a>
+            <a routerLink="/achievements">Achievements</a>
+            <a routerLink="/vision">Vision & Mission</a>
+            <a routerLink="/rewards">Rewards</a>
+            <a routerLink="/services">Services</a>
+          </div>
+        </div>
+
+        <a routerLink="/contact-us">
+          Contact Us
+        </a>
+      </nav>
+
+      <!-- Desktop CTA -->
+      <p-button
+        label="Hire Now"
+        icon="pi pi-arrow-up-right"
+        routerLink="/contact-us"
+        styleClass="desktop-btn">
+      </p-button>
+
+      <!-- Mobile Toggle -->
+      <button
+        class="mobile-toggle"
+        (click)="toggleMenu()">
+
+        <i
+          class="pi"
+          [class.pi-bars]="!mobileMenuOpen"
+          [class.pi-times]="mobileMenuOpen">
+        </i>
+
+      </button>
+
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div
+    class="mobile-menu"
+    [class.open]="mobileMenuOpen">
+
+    <a routerLink="/" (click)="closeMenu()">Home</a>
+
+    <a routerLink="/about-us" (click)="closeMenu()">
+      About Us
+    </a>
+
+    <a routerLink="/practice-area" (click)="closeMenu()">
+      Practice Areas
+    </a>
+
+    <!-- Gallery -->
+    <div class="mobile-dropdown">
+
+      <button (click)="toggleGallery()">
+        Gallery
+        <i class="pi pi-angle-down"></i>
+      </button>
+
+      @if(galleryOpen){
+      <div class="submenu">
+        <a routerLink="/gallery/photos">Photo Gallery</a>
+        <a routerLink="/gallery/videos">Video Gallery</a>
+      </div>
+      }
+
+    </div>
+
+    <!-- Pages -->
+    <div class="mobile-dropdown">
+
+      <button (click)="togglePages()">
+        Pages
+        <i class="pi pi-angle-down"></i>
+      </button>
+
+      @if(pagesOpen){
+      <div class="submenu">
+        <a routerLink="/team-members">Team Members</a>
+        <a routerLink="/testimonials">Testimonials</a>
+        <a routerLink="/achievements">Achievements</a>
+        <a routerLink="/vision">Vision & Mission</a>
+        <a routerLink="/rewards">Rewards</a>
+        <a routerLink="/services">Services</a>
+      </div>
+      }
+
+    </div>
+
+    <a routerLink="/contact-us" (click)="closeMenu()">
+      Contact Us
+    </a>
+
+    <p-button
+      label="Hire Now"
+      icon="pi pi-arrow-up-right"
+      styleClass="w-full mt-4">
+    </p-button>
+
+  </div>
+
+</header>

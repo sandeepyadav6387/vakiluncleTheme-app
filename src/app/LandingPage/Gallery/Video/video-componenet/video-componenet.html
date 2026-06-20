@@ -1,0 +1,76 @@
+<!-- Banner -->
+
+<section class="gallery-banner">
+
+  <div class="banner-content">
+    <h1>Video Gallery</h1>
+
+    <div class="breadcrumb">
+      Home <span>›</span> Video Gallery
+    </div>
+  </div>
+
+</section>
+
+<!-- Videos -->
+
+<section class="video-section">
+
+  <div class="video-grid">
+
+    @for(video of videos; track video){
+
+      <a
+        [href]="video.url"
+        target="_blank"
+        class="video-card">
+
+        <img
+          [src]="video.thumbnail"
+          alt="Video Thumbnail">
+
+        <div class="play-btn">
+          <i class="pi pi-play"></i>
+        </div>
+
+      </a>
+
+    }
+
+  </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="cta-section">
+
+  <div class="cta-content">
+
+    <h2>
+      Secure Your Defense:<br>
+      Schedule a Free<br>
+      Consultation Today
+    </h2>
+
+    <p>
+      This CTA title invites readers to take action &
+      seek the assistance corporate lawyer.
+    </p>
+
+    <div class="cta-form">
+
+      <input
+        type="email"
+        placeholder="Enter Your Email">
+
+      <button>
+        Schedule a Consultation
+        <i class="pi pi-arrow-up-right"></i>
+      </button>
+
+    </div>
+
+  </div>
+
+</section>

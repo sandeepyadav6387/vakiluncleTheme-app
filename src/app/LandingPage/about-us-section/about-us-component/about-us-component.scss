@@ -1,0 +1,172 @@
+.about-section {
+    padding: 100px 0 20px 0;
+  background: #f8f8f8;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 320px 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+/* LEFT CONTENT */
+
+.about-left {
+  max-width: 350px;
+}
+
+.about-tag {
+  display: inline-block;
+  padding: 6px 16px;
+
+  border: 1px solid #cfcfcf;
+  border-radius: 30px;
+
+  font-size: 14px;
+  color: #222;
+
+  margin-bottom: 25px;
+}
+
+.about-left h2 {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 600;
+
+  color: #141b2d;
+
+  margin-bottom: 20px;
+}
+
+.about-left p {
+  font-size: 16px;
+  line-height: 1.9;
+
+  color: #666;
+
+  margin-bottom: 30px;
+}
+
+.about-btn {
+  display: inline-block;
+
+  background: #f7941d;
+  color: #fff;
+
+  padding: 14px 28px;
+  border-radius: 999px;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.about-btn:hover {
+  transform: translateY(-3px);
+}
+
+/* CENTER IMAGE */
+
+.about-center {
+  display: flex;
+  justify-content: center;
+}
+
+.about-center img {
+  width: 100%;
+  max-width: 320px;
+
+  transition: 0.4s ease;
+}
+
+.about-center img:hover {
+  transform: scale(1.05);
+}
+
+/* RIGHT CONTENT */
+
+.about-right {
+  max-width: 350px;
+}
+
+.message {
+  font-size: 16px;
+  line-height: 2;
+
+  color: #555;
+
+  margin-bottom: 25px;
+}
+
+.about-right h3 {
+  font-size: 28px;
+  font-weight: 500;
+
+  color: #141b2d;
+
+  margin-bottom: 8px;
+}
+
+.designation {
+  display: block;
+
+  font-size: 16px;
+  color: #666;
+
+  margin-bottom: 20px;
+}
+
+.signature {
+  width: 120px;
+  height: auto;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-left,
+  .about-right {
+    max-width: 100%;
+    margin: auto;
+  }
+
+  .about-center {
+    order: -1;
+  }
+
+  .about-center img {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 576px) {
+
+  .about-section {
+    padding: 70px 0;
+  }
+
+  .about-left h2 {
+    font-size: 28px;
+  }
+
+  .message,
+  .about-left p {
+    font-size: 15px;
+  }
+
+  .about-btn {
+    padding: 12px 22px;
+  }
+}

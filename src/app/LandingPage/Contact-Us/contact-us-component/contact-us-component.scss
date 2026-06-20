@@ -1,0 +1,28 @@
+.contact-label {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 18px;
+  font-weight: 500;
+
+  color: #1c2434;
+}
+
+:host ::ng-deep .p-inputtext,
+:host ::ng-deep textarea {
+  width: 100%;
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.contact-btn {
+  background: #f7941d !important;
+  border: none !important;
+  border-radius: 999px !important;
+
+  padding: 14px 28px !important;
+}
+
+.contact-btn:hover {
+  background: #e68610 !important;
+}

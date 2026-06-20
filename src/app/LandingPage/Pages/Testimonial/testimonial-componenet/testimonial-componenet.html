@@ -1,0 +1,107 @@
+<!-- Banner -->
+<section class="bg-[#f5f1eb] py-20 border-b border-gray-200 relative">
+
+  <div class="max-w-7xl mx-auto px-4 text-center">
+
+    <div class="absolute left-20 top-10 hidden lg:block">
+      <i class="pi pi-sparkles text-5xl text-[#1c2434]"></i>
+    </div>
+
+    <h1 class="font-serif text-5xl text-[#1c2434] mb-4">
+      Testimonials
+    </h1>
+
+    <div class="flex justify-center items-center gap-2 text-sm">
+
+      <span>Home</span>
+
+      <i class="pi pi-angle-right text-xs"></i>
+
+      <span class="font-semibold">
+        Testimonials
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Testimonials -->
+
+<section class="bg-[#f7f7f7] py-20">
+
+  <div class="max-w-7xl mx-auto px-4">
+
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      @for(item of testimonials; track $index){
+
+      <div class="testimonial-card">
+
+        <!-- Avatar -->
+
+        <div class="relative mb-6">
+
+          <img
+            [src]="item.image"
+            alt=""
+            class="w-14 h-14 rounded-full object-cover">
+
+          <div class="quote-icon">
+
+            <i class="pi pi-quote-right"></i>
+
+          </div>
+
+        </div>
+
+        <!-- Text -->
+
+        <p class="review-text">
+          {{item.review}}
+        </p>
+
+        <!-- Stars -->
+
+        <div class="flex gap-1 mb-5">
+
+          <i class="pi pi-star-fill text-[#f7941d]"></i>
+          <i class="pi pi-star-fill text-[#f7941d]"></i>
+          <i class="pi pi-star-fill text-[#f7941d]"></i>
+          <i class="pi pi-star-fill text-[#f7941d]"></i>
+          <i class="pi pi-star-fill text-[#f7941d]"></i>
+
+        </div>
+
+        <!-- User -->
+
+        <h4 class="font-semibold text-[#1c2434]">
+          {{item.name}}
+        </h4>
+
+        <span class="date-text">
+          {{item.date}}
+        </span>
+
+      </div>
+
+      }
+
+    </div>
+
+    <!-- Pagination -->
+
+    <div class="mt-16 flex justify-center">
+
+      <p-paginator
+        [rows]="12"
+        [totalRecords]="120">
+      </p-paginator>
+
+    </div>
+
+  </div>
+
+</section>

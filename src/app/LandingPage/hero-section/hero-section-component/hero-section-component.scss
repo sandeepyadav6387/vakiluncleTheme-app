@@ -1,0 +1,61 @@
+/* Rotating Badge */
+
+.badge-wrapper {
+  width: 130px;
+  height: 130px;
+  background: #fff;
+  border-radius: 999px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.badge-text {
+  width: 100%;
+  height: 100%;
+  animation: rotateBadge 15s linear infinite;
+}
+.top-card {
+  transform: translate(18px, -10px);
+}
+
+.badge-arrow {
+  position: absolute;
+  font-size: 26px;
+  color: #1c1c27;
+  transform: rotate(-45deg);
+}
+
+@keyframes rotateBadge {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Floating Scale Icon */
+
+.law-icon {
+  animation: floatIcon 4s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

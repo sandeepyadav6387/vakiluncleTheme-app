@@ -1,0 +1,94 @@
+<!-- Banner -->
+<section
+  class="bg-[#f5f1eb] py-20 border-b border-gray-200 relative overflow-hidden">
+
+  <div class="max-w-7xl mx-auto px-4 text-center">
+
+    <div class="absolute left-20 top-10 hidden lg:block">
+      <i class="pi pi-sparkles text-5xl text-[#1c2434]"></i>
+    </div>
+
+    <h1
+      class="font-serif text-4xl md:text-5xl font-semibold text-[#1c2434] mb-4">
+      Our Team
+    </h1>
+
+    <div class="flex justify-center items-center gap-2 text-sm">
+      <span>Home</span>
+      <i class="pi pi-angle-right text-xs"></i>
+      <span class="font-medium">Team</span>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- Team Section -->
+<section class="bg-[#f3f3f3] py-20">
+
+  <div class="max-w-7xl mx-auto px-4">
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      @for(member of teamMembers; track member.name){
+
+      <div class="team-card bg-white">
+
+        <!-- Image -->
+        <div class="image-wrapper">
+
+          <img
+            [src]="member.image"
+            [alt]="member.name"
+            class="w-full h-[280px] object-cover">
+
+        </div>
+
+        <!-- Orange Line -->
+        <div class="h-[4px] bg-[#f7941d]"></div>
+
+        <!-- Content -->
+        <div class="p-5 text-center">
+
+          <h3
+            class="font-serif text-[28px] leading-tight text-[#1c2434] mb-2">
+            {{ member.name }}
+          </h3>
+
+          <p class="text-gray-500 text-sm mb-5">
+            {{ member.role }}
+          </p>
+
+          <!-- Social -->
+          <div class="flex justify-center gap-3">
+
+            <a class="social-icon">
+              <i class="pi pi-times"></i>
+            </a>
+
+            <a class="social-icon">
+              <i class="pi pi-facebook"></i>
+            </a>
+
+            <a class="social-icon">
+              <i class="pi pi-instagram"></i>
+            </a>
+
+            <a class="social-icon">
+              <i class="pi pi-linkedin"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      }
+
+    </div>
+
+  </div>
+
+</section>
