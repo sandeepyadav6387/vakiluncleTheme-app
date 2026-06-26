@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { PaginatorModule } from 'primeng/paginator';
 @Component({
   selector: 'app-testimonial-componenet',
-  imports: [PaginatorModule],
+  imports: [],
   templateUrl: './testimonial-componenet.html',
   styleUrl: './testimonial-componenet.scss',
 })
 export class TestimonialComponenet {
-   testimonials = Array(12).fill({
-    image: '/assets/Images/testimonial1.png',
+   testimonials = Array(6).fill({
+    image: 'assets/Images/testimonial1.png',
     name: 'Jane Doe',
     date: '21 April 2024',
     review:

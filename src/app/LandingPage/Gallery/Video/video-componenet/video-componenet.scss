@@ -1,8 +1,8 @@
 
 
 .gallery-banner {
-  height: 260px;
-  background: #f5f1ea;
+  height: 120px;
+  background: #141414;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -44,7 +44,7 @@
 
 .video-card img {
   width: 100%;
-  height: 220px;
+  height: 350px;
   object-fit: cover;
   transition: .4s;
 }
@@ -78,25 +78,25 @@
 
 
 .cta-section {
-  background: #ff8c00;
+  background: #d8d4ce;
   padding: 50px 20px;
   text-align: center;
 }
 
 .cta-content {
-  max-width: 700px;
+  max-width: 800px;
   margin: auto;
 }
 
 .cta-content h2 {
-  color: white;
+  color: rgb(12, 12, 12);
   font-size: 38px;
   line-height: 1.3;
   font-family: Georgia, serif;
 }
 
 .cta-content p {
-  color: white;
+  color: rgb(27, 27, 27);
   margin: 20px 0 35px;
 }
 
@@ -115,7 +115,7 @@
 }
 
 .cta-form button {
-  background: #ff8c00;
+  background: #998770;
   color: white;
   border: none;
   padding: 18px 30px;
@@ -148,4 +148,24 @@
     border-radius: 20px;
   }
 
+}
+.banner-icon {
+  font-size: 70px;
+  color: #1c2434;
+
+  animation: floatStar 3s ease-in-out infinite;
+}
+
+@keyframes floatStar {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }

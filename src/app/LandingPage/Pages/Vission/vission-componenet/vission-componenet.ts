@@ -11,7 +11,7 @@ export class VissionComponenet {
     sections = [
     {
       title: 'Vision',
-      image: '/assets/Images/ideas-progress-vision-inspiration-design-concept.jpg',
+      image: 'assets/Images/ideas-progress-vision-inspiration-design-concept.jpg',
       imageLeft: true,
       paragraphs: [
         'Our vision is to become a trusted legal partner for individuals, families, and businesses by providing transparent, reliable, and client-focused legal services.',

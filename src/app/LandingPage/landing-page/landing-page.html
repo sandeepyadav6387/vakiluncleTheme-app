@@ -26,55 +26,205 @@
   </div>
 
 </section>
+<div id="about-us">
+  <app-about-us-component></app-about-us-component>
+</div>
 
-<section class="about-content-section">
+<div id="practice-areas">
+  <app-practice-area-component></app-practice-area-component>
+</div>
+<div id="achievements">
+  <app-achievement-componenet></app-achievement-componenet>
+</div>
+<div id="vission">
+  <app-vission-componenet></app-vission-componenet>
+</div>
+<div id="rewards">
+  <app-rewards-componenet></app-rewards-componenet>
+</div>
+<div id="services">
+  <app-services-componenet></app-services-componenet>
+</div>
+<div id="photo-gallery">
+  <app-photo-componenet></app-photo-componenet>
+</div>
+<div id="video-gallery">
+  <app-video-componenet></app-video-componenet>
+</div>
+<div id="team-members">
+  <app-team-memeber-componenet></app-team-memeber-componenet>
+</div>
+<div id="testimonials">
+  <app-testimonial-componenet></app-testimonial-componenet>
+</div>
+<div id="contact-us">
+  <app-contact-us-component></app-contact-us-component>
+</div>  
 
-  <div class="content-wrapper">
 
-    <div class="content-card">
+<!-- Footer -->
+ <footer class="bg-[#111827] text-gray-300">
 
-      <span class="content-tag">
-        About Our Firm
-      </span>
+  <div class="max-w-7xl mx-auto px-6 py-16">
 
-      <h2>
-        Dedicated Legal Excellence With A Client-First Approach
-      </h2>
+    <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-10">
 
-      <p>
-        At Vakil Uncle, we believe every client deserves strong legal
-        representation, honest guidance, and personalized attention.
-        Our experienced legal team is committed to protecting your rights
-        and delivering practical solutions for even the most complex legal matters.
-      </p>
+      <!-- Logo -->
+      <div>
 
-      <p>
-        Whether you are facing criminal charges, property disputes,
-        family law issues, or civil litigation, we work tirelessly to
-        achieve the best possible outcome while keeping you informed at
-        every stage of the legal process.
-      </p>
+        <div class="flex items-center gap-3 mb-5">
 
-      <div class="feature-grid">
+          <div
+            class="w-12 h-12 rounded-full bg-amber-500 flex items-center justify-center text-white text-xl font-bold">
+            🏛️
+          </div>
 
-        <div class="feature-item">
-          <i class="pi pi-check-circle"></i>
-          <span>Experienced Legal Professionals</span>
+          <h2 class="text-2xl font-bold text-white">
+            Just Law
+          </h2>
+
         </div>
 
-        <div class="feature-item">
-          <i class="pi pi-check-circle"></i>
-          <span>Client-Focused Representation</span>
-        </div>
+        <p class="text-sm leading-7">
+          Dedicated to providing trusted legal solutions with integrity,
+          professionalism and commitment to justice.
+        </p>
 
-        <div class="feature-item">
-          <i class="pi pi-check-circle"></i>
-          <span>Transparent Communication</span>
-        </div>
+      </div>
 
-        <div class="feature-item">
-          <i class="pi pi-check-circle"></i>
-          <span>Proven Track Record</span>
+      <!-- Quick Links -->
+      <div>
+
+        <h3 class="text-lg font-semibold text-white mb-5">
+          Quick Links
+        </h3>
+
+        <ul class="space-y-3">
+
+          <li>
+            <a
+              routerLink="/"
+              fragment="about-us"
+              class="hover:text-amber-500 transition">
+              About Us
+            </a>
+          </li>
+
+          <li>
+            <a
+              routerLink="/"
+              fragment="practice-areas"
+              class="hover:text-amber-500 transition">
+              Practice Areas
+            </a>
+          </li>
+
+          <li>
+            <a
+              routerLink="/"
+              fragment="services"
+              class="hover:text-amber-500 transition">
+              Services
+            </a>
+          </li>
+
+          <li>
+            <a
+              routerLink="/"
+              fragment="team-members"
+              class="hover:text-amber-500 transition">
+              Our Team
+            </a>
+          </li>
+
+          <li>
+            <a
+              routerLink="/"
+              fragment="contact-us"
+              class="hover:text-amber-500 transition">
+              Contact Us
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- Gallery & Pages -->
+      <div>
+
+        <h3 class="text-lg font-semibold text-white mb-5">
+          Gallery & Pages
+        </h3>
+
+        <ul class="space-y-3">
+
+          <li>
+            <a
+              routerLink="/"
+              fragment="photo-gallery"
+              class="hover:text-amber-500 transition">
+              Photo Gallery
+            </a>
+          </li>
+
+          <li>
+            <a
+              routerLink="/"
+              fragment="video-gallery"
+              class="hover:text-amber-500 transition">
+              Video Gallery
+            </a>
+          </li>
+
+          <li>
+            <a
+              routerLink="/"
+              fragment="rewards"
+              class="hover:text-amber-500 transition">
+              Rewards
+            </a>
+          </li>
+
+          <li>
+            <a
+              routerLink="/"
+              fragment="achievements"
+              class="hover:text-amber-500 transition">
+              Achievements
+            </a>
+          </li>
+
+          <li>
+            <a
+              routerLink="/"
+              fragment="vission"
+              class="hover:text-amber-500 transition">
+              Vision & Mission
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- Contact -->
+      <div>
+
+        <h3 class="text-lg font-semibold text-white mb-5">
+          Contact Info
+        </h3>
+
+        <div class="space-y-4 text-sm">
+
+          <p>📍 Your Office Address Here</p>
+
+          <p>📞 +91 98765 43210</p>
+
+          <p>✉️ info@advocate.com</p>
+
+          <p>🕒 Mon - Sat : 9:00 AM - 7:00 PM</p>
+
         </div>
 
       </div>
@@ -83,9 +233,23 @@
 
   </div>
 
-</section>
+  <div class="border-t border-gray-700">
 
-<app-practice-area-component></app-practice-area-component>
-<app-testimonial-slider></app-testimonial-slider>
+    <div
+      class="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row justify-between items-center gap-3">
+
+      <p class="text-sm">
+        © 2026 Just Law. All Rights Reserved.
+      </p>
+
+      <p class="text-sm">
+        Designed & Developed by Vakil Uncle
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
 
 

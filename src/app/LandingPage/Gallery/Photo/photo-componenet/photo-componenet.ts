@@ -9,13 +9,13 @@ import { Component } from '@angular/core';
 export class PhotoComponenet {
    photos = [
     'assets/Images/mainimage2.jfif',
+    'assets/Images/photo1.avif',
     'assets/Images/mainimage2.jfif',
+    'assets/Images/photo2.avif',
     'assets/Images/mainimage2.jfif',
+    'assets/Images/photo1.avif',
     'assets/Images/mainimage2.jfif',
-    'assets/Images/mainimage2.jfif',
-    'assets/Images/mainimage2.jfif',
-    'assets/Images/mainimage2.jfif',
-    'assets/Images/mainimage2.jfif',
+    'assets/Images/photo2.avif',
     'assets/Images/mainimage2.jfif'
   ];
 }

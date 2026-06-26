@@ -1,0 +1,44 @@
+:host ::ng-deep .learn-btn {
+  background: transparent;
+  border: none;
+  color: #141b2d;
+  font-weight: 600;
+  padding: 0;
+}
+
+:host ::ng-deep .learn-btn:hover {
+  background: transparent !important;
+}
+
+:host ::ng-deep .service-main-btn {
+  background: #f7941d !important;
+  border: none !important;
+  border-radius: 999px !important;
+
+  padding: 14px 28px !important;
+  font-weight: 600;
+}
+
+:host ::ng-deep .service-main-btn:hover {
+  background: #e58714 !important;
+}
+.banner-icon {
+  font-size: 70px;
+  color: #1c2434;
+
+  animation: floatStar 3s ease-in-out infinite;
+}
+
+@keyframes floatStar {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}

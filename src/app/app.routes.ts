@@ -15,23 +15,7 @@ import { Viewport } from './LandingPage/viewport/viewport';
 
 export const routes: Routes = [
   {
-    path: '', component: Viewport,
-    children: [
-      { path: '', component: LandingPage },
-      { path: 'about-us', component: AboutUsComponent },
-      { path: 'practice-area', component: PracticeAreaComponent },
-      { path: 'contact-us', component: ContactUsComponent },
-      // Gallery
-      { path: 'gallery/photos', component: PhotoComponenet },
-      { path: 'gallery/videos', component: VideoComponenet },
-
-      // Pages
-      { path: 'team-members', component: TeamMemeberComponenet },
-      { path: 'testimonials', component: TestimonialComponenet },
-      { path: 'achievements', component: AchievementComponenet },
-      { path: 'vision', component: VissionComponenet },
-      { path: 'rewards', component: RewardsComponenet },
-      { path: 'services', component: ServicesComponenet },
-    ]
+    path: '', component: LandingPage
+   
   }
 ];

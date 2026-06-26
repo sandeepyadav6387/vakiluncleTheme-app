@@ -54,3 +54,23 @@
   border-color: #f7941d;
   color: #fff;
 }
+.banner-icon {
+  font-size: 70px;
+  color: #1c2434;
+
+  animation: floatStar 3s ease-in-out infinite;
+}
+
+@keyframes floatStar {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
